@@ -1,0 +1,69 @@
+.section {
+  &__category {
+    margin-top: 50px;
+
+    &-accordion {
+      padding: 30px;
+      border: $borderBottom;
+
+      h4 {
+        font-size: 18px;
+        padding: 0 0 10px;
+        margin-bottom: 30px;
+        border-bottom: $borderBottom;
+      }
+
+      &-link {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+        display: block;
+      }
+
+      &-toggle {
+        cursor: pointer;
+        font-size: 17px;
+        transform: rotate(0deg);
+        transition: all 0.4s ease 0s;
+
+        &.active {
+          transform: rotate(180deg);
+        }
+      }
+
+      &-sub {
+        padding-left: 20px;
+      }
+    }
+
+    &-product {
+      h5 {
+        font-weight: 700;
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-bottom: 0 !important;
+      }
+
+      &-pagination {
+        a {
+          font-size: 14px;
+          padding: 5px 15px;
+          display: block;
+          margin-right: 10px;
+          background: $bgPagination;
+          color: $colorWhite;
+          border-radius: 5px;
+
+          &.active {
+            background-color: $bgBlue;
+          }
+
+          &:hover {
+            background-color: $bgBlue;
+          }
+        }
+      }
+    }
+
+  }
+}

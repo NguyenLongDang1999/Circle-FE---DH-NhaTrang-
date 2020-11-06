@@ -1,0 +1,32 @@
+.section {
+    &__checkout {
+        &-title {
+            h5 {
+                background-color: $bgDark;
+                color: $colorWhite;
+                padding: 7px 15px;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            text-overflow: ellipsis;
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        &-btn {
+            background-color: $bgBlue;
+            border: 0;
+            padding: 9px 16px;
+            color: $colorWhite;
+            text-transform: capitalize;
+
+            &:hover {
+                background-color: $bgDark;
+            }
+        }
+    }
+}
